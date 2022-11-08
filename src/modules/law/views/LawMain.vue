@@ -42,10 +42,6 @@ export default {
 
 	&__btn {
 		margin-left: 2.5rem;
-		padding: 1rem 0.5rem;
-		font-size: 1rem;
-		background: #34ebb4;
-		border-radius: 0.5rem;
 	}
 }
 </style>
