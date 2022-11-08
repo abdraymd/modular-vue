@@ -2,7 +2,7 @@
 	<section class="law-main">
 		<div class="law-main__counter">
 			<div>count: {{ count }}</div>
-			<button class="law-main__btn" @click="increment">Increment</button>
+			<UiButton class="law-main__btn" @click="increment">Increment</UiButton>
 		</div>
 
 		<LawTable />
@@ -12,12 +12,14 @@
 <script>
 import { computed } from 'vue';
 import LawTable from '../components/LawTable.vue';
+import UiButton from '@/modules/shared/components/UiButton.vue';
 import { useStoreLaw } from '../store';
 
 export default {
 	name: 'LawMain',
 	components: {
-		LawTable
+		LawTable,
+		UiButton
 	},
 	setup() {
 		const store = useStoreLaw();
